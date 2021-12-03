@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>留言板</title>
+	<link rel="stylesheet" href="">
+	<style>
+		/*第 1 图层样式*/
+		#div1{
+			background-color:#f2f9fd; 
+			color:##66ffff; 
+			width:100%
+			height:30px
+			
+		}
+		/*第 2 图层样式*/
+		#div2{
+			background-color:#f2f9fd; 
+			color:##66ffff;
+			width:100%; 
+			height:500px;
+			margin-top:3px;
+			
+		}
+		/*单元格 1 样式*/
+		.td1{
+			line-height:22px; 
+			font-size:18px; 
+			color:#339966; 
+			width:200px;
+			font-weight:bold;
+		}
+		/*单元格 2 样式*/
+		.td2{
+			line-height:42px; 
+			font-size:18px; 
+			color:red; 
+			width:500px; 
+			font-weight:bold;
+		}
+		/*标题 1 样式*/
+		.bt1{
+			font-size:30px; 
+			font;family:黑体; 
+			font-weight:bold; 
+			text-align:left; 
+			width:500px; 
+			color:#0033cc;
+		}
+		/*标题 2 样式*/
+		.bt2{
+			font-size:22px; 
+			font-family:黑体; 
+			font-weight:bold; 
+			text-align:left; 
+			width:200px; 
+			color:#0033cc;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<table border="0" cellspacing="" cellpadding="">
+			<tr>
+				<th class="bt1">留言板</th>
+				<th class="bt2">科技工作者建言</th>
+			</tr>
+			
+		</table>
+	</div>
+	<div id="div2">
+		<form>
+			<table>
+				<tr >
+					<td class="td1" style="color:red">发表留言</td>
+				</tr>
+			</table>
+			<table  border="1" bordercolor="white" cellspacing="0">
+				<tr>
+					<td class="td1">姓名：</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td class="td1">电子邮件</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td class="td1">分类：</td>
+					<td class="td2">科技工作者建言
+						<input type="radio"name="select">保密
+						<input type="radio"name="select"> 不保密
+						留言类型：
+						<select name="lx">
+							<option value="1" selected="selected"></option>
+							<option value="2">投诉</option>
+							<option value="3">咨询</option>
+							<option value="4">建议</option>
+							<option value="5">反馈</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1">留言：</td>
+					<td class="td2">
+						<textarea rows="6" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="color: #00008B">注：如果您的留言不便公开，
+					请选择"保密"选项，提交后可凭系统反馈给您的留言编号、查询密码和您的姓名查询回复。</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" >
+						<input type="submit" value="提交">
+						<input type="reset" value="清空">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<ul>
+							<li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+							<li>本网站拥有管理笔名和留言的一切权利。</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
