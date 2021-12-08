@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>判断字符是不是数字</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+		请输入数字：<input type="text" id="num">
+		<input type="button" onclick="isRealNum()" value="提交">
+	
+	<script type="text/javascript">
+		function isRealNum(){
+			var n=document.getElementById("num").value;
+			if(!isNaN(n)){
+				alert("输入的是数字  float="+parseFloat(n)+"  int="+parseInt(n))
+
+			}
+			else{
+				alert("请输入数字");
+			}
+		}
+	</script>
+	
+</body>
+</html>

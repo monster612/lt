@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>math方法</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+    <script type="text/javascript" >
+    /*定义数组并直接初始化数组元素的方法 1：*/
+    var classmates = new Array("张三", "李四", "王五", "赵六", "孙七");
+    /*定义数组并直接初始化数组元素的方法 2：*/
+    var classmates = ["张三", "李四", "王五", "赵六", "孙七"];
+    /*先定义数组， 后初始化数组元素：*/
+    document.write("直接初始化:<br>");
+    for(var i in classmates){
+    	document.write(classmates[i]+"<br>");
+
+    }
+    var classmates = new Array();
+    classmates[0] = " 张 三 ";
+    classmates[1] = "李四";
+    document.write("后初始化:<br>");
+    for(var i=0; i<classmates.length; i++){
+    	document.write(classmates[i]+"<br>");
+    }
+    document.getElementById("demo1").innerHTML ="Math.PI="+Math.PI+"<br>"+
+                                               "Math.round(3.56)="+Math.round(3.56)+"<br>"+
+                                               "Math.pow(2,3)="+Math.pow(2,3)+"<br>"+
+                                               "Math.floor(2.4)="+Math.floor(2.4)+"<br>"+
+                                               "Math.ceil(2.5)="+Math.ceil(2.5)+"<br>"+
+                                               "Math.randow()="+Math.random();
+    var currentdate = new Date();
+    document.getElementById("demo2").innerHTML="getFullYear()="+currentdate.getFullYear()+"<br>"+
+                                               "getMonth()="+currentdate.getMonth()+"<br>"+
+                                               "getDate()="+currentdate.getDate()+"<br>"+
+                                               "getDay()="+currentdate.getDay()+"<br>";
+    
+    var s1 = new String("This is a new string") ; 
+    var s2 = "This is a new string" ;
+    document.getElementById("demo3").innerHTML="s1.length="+s1.length+"&nbsp;&nbsp;s2.length="+s2.length+"<br>"+
+                                               "s1.toLowerCase()="+s1.toLowerCase()+"&nbsp;&nbsp;s2.toLowerCase()="+s2.toLowerCase()+"<br>"+
+                                               "s1.toUpperCase()="+s1.toUpperCase()+"&nbsp;&nbsp;s2.toUpperCase()="+s2.toUpperCase()+"<br>"+
+                                               "s1.charAt(2)="+s1.charAt(2)+"&nbsp;&nbsp;s2.charAt(3)="+s2.charAt(3)+"<br>"+
+                                               "s1.substr(0,3)="+s1.substr(0,3)+"&nbsp;&nbsp;s2.substr(0,3)="+s2.substr(0,4)+"<br>"+
+                                               "s1.substring(2,6)="+s1.substring(2,6)+"&nbsp;&nbsp;s2.substring(4,15)="+s2.substring(4,15)+"<br>";
+    </script>
+</body>
+
+</html>
