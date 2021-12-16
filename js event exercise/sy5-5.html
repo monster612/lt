@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>窗口事件处理</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body >
+	<button onclick="stay()">点击获取停留时间</button>
+    <script language="Javascript">
+    pageOpen = new Date();
+
+    function stay() {
+        pageClose = new Date();
+        minutes = (pageClose.getMinutes() - pageOpen.getMinutes());
+        seconds = (pageClose.getSeconds() - pageOpen.getSeconds());
+        time = (seconds + (minutes * 60));
+        time = (time + " 秒钟");
+        console.log(time)
+        alert('您在这儿停留了' + time + '.欢迎下次再来!');
+    }
+    </script>
+</body>
+
+</html>

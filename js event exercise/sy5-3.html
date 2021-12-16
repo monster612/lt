@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> 鼠标事件处理程序</title>
+    <link rel="stylesheet" href="">
+    <style>
+    form {
+        text-align: center;
+    }
+
+    div {
+        background: #33ff99;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    </style>
+</head>
+<body >
+    <div id="div" onmouseover="mover(this)" onmouseout="mout(this)">
+        <h2>鼠标处理事件</h2>
+        <form>
+            <input type="text" id="text" ondblclick="mdclick()" onclick="mclick()" onmousedown="mdown()" onmousemove="mmove()" >
+            
+        </form>
+    </div>
+    <script type="text/javascript">
+        function mdclick(){
+            document.getElementById("text").value="双击鼠标";
+        }
+        function mclick(){
+            document.getElementById("text").value="单击鼠标";
+        }
+        function mdown(){
+            document.getElementById("text").value="按下";
+        }
+        function mmove(x){
+            document.getElementById("div").style.background="#0033ff";
+        }
+       
+        function mover(x){
+            x.style.background="#99cc66";
+        }
+        function mout(x){
+            x.style.background="#ff33ff";
+        }
+    </script>
+</body>
+
+</html>
